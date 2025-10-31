@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { Cascadia_Mono } from 'next/font/google';
-import { Header } from '@/layout';
+import { Header, Main } from '@/layout';
 import './globals.css';
 
 const pretendard = localFont({
@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="ko" className={`${pretendard.variable} ${cascadiaMono.variable} antialiased`}>
       <body className="min-h-screen">
         <Header />
-        {children}
+        <Main>{children}</Main>
       </body>
     </html>
   );
