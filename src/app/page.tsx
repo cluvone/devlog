@@ -3,7 +3,7 @@ import { Container } from '@/layout';
 
 export default function Home() {
   return (
-    <Container className="my-12">
+    <Container>
       <div>
         <section>
           <span className="text-primary text-sm">@cluvone</span>

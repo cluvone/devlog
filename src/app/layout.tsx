@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { Cascadia_Mono } from 'next/font/google';
-import { Header, Main } from '@/layout';
+import { Footer, Header, Main } from '@/layout';
 import './globals.css';
 
 const pretendard = localFont({
@@ -27,6 +27,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className="min-h-screen">
         <Header />
         <Main>{children}</Main>
+        <Footer />
       </body>
     </html>
   );
