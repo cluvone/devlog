@@ -1,17 +1,24 @@
 import Link from 'next/link';
 import { Container } from '@/layout';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <Container>
-      <div>
-        <section>
-          <span className="text-primary text-sm">@cluvone</span>
-          <h2 className="my-1 text-4xl font-bold">최정원</h2>
-          <p>풀스택 개발 꿈나무 🌿</p>
+    <Container className="flex flex-col gap-y-16">
+      <div className="flex flex-col gap-y-8">
+        <section className="flex flex-wrap items-center gap-x-6 gap-y-2">
+          <div className="h-24 w-24 overflow-hidden rounded-full">
+            <Image src="/images/avatar.jpg" alt="프로필 이미지" width={96} height={96} />
+          </div>
+
+          <div>
+            <span className="text-primary text-sm">@cluvone</span>
+            <h2 className="my-1 text-4xl font-bold">최정원</h2>
+            <p className="font-semibold">풀스택 개발 꿈나무 🌿</p>
+          </div>
         </section>
 
-        <section className="mt-10 mb-16">
+        <section>
           <p>
             안녕하세요, TypeScript & React / C# ASP.NET Core 기반 2년 차 웹 개발자입니다.
             <br />
