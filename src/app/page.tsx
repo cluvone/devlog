@@ -1,16 +1,11 @@
 import Link from 'next/link';
 import { Container } from '@/layout';
-import Image from 'next/image';
 
 export default function Home() {
   return (
     <Container className="flex flex-col gap-y-16">
       <div className="flex flex-col gap-y-8">
-        <section className="flex flex-wrap items-center gap-x-6 gap-y-2">
-          <div className="h-24 w-24 overflow-hidden rounded-full">
-            <Image src="/images/avatar.jpg" alt="프로필 이미지" width={96} height={96} />
-          </div>
-
+        <section>
           <div>
             <span className="text-primary text-sm">@cluvone</span>
             <h2 className="my-1 text-4xl font-bold">최정원</h2>
