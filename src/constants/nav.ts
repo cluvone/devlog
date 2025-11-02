@@ -1,7 +1,7 @@
 const NAV_ITEMS = [
-  { title: 'Home', href: '/' },
-  { title: 'Projects', href: '/projects' },
-  { title: 'Blog', href: '/blog' },
+  { title: '홈', href: '/' },
+  { title: '프로젝트', href: '/projects' },
+  { title: '블로그', href: '/blog' },
 ] as const;
 
 export default NAV_ITEMS;

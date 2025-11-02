@@ -33,7 +33,7 @@ export default function Home() {
 
       <div className="flex flex-col gap-y-20">
         <section>
-          <h3 className="text-primary mb-5 text-2xl font-semibold">👩‍💻 Work Experience</h3>
+          <h3 className="text-primary mb-5 text-2xl font-semibold">👩‍💻 경력</h3>
 
           <ul className="divide-y divide-gray-200 border-y border-y-gray-200">
             <li className="flex flex-col gap-y-4 py-8 md:flex-row">
@@ -98,7 +98,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h3 className="text-primary mb-5 text-2xl font-semibold">📚 Education</h3>
+          <h3 className="text-primary mb-5 text-2xl font-semibold">📚 교육 이력</h3>
 
           <ul className="divide-y divide-gray-200 border-y border-y-gray-200">
             <li className="flex flex-col gap-y-4 py-8 md:flex-row">
@@ -135,7 +135,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h3 className="text-primary mb-5 text-2xl font-semibold">📝 Certificate</h3>
+          <h3 className="text-primary mb-5 text-2xl font-semibold">📝 자격증</h3>
 
           <ul className="divide-y divide-gray-200 border-y border-y-gray-200">
             <li className="flex flex-col gap-y-4 py-8 md:flex-row">
@@ -152,7 +152,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h3 className="text-primary mb-5 text-2xl font-semibold">💪 Skills</h3>
+          <h3 className="text-primary mb-5 text-2xl font-semibold">💪 기술 스택</h3>
           <ul className="flex flex-wrap items-center gap-2">
             <li className="border-primary text-primary rounded-2xl border px-4 py-1">TypeScript</li>
             <li className="border-primary text-primary rounded-2xl border px-4 py-1">React</li>
