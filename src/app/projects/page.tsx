@@ -1,4 +1,7 @@
 import Image from 'next/image';
+import zadeLogo from 'public/images/logo/zadesoft.png';
+import stoicLogo from 'public/images/logo/stoic.png';
+import certMark from 'public/images/projects/cert-mark.png';
 import { Container } from '@/layout';
 import { FaCode } from 'react-icons/fa6';
 
@@ -10,8 +13,8 @@ export default function Page() {
         <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
             <div>
-              <div className="mb-3 h-6 w-full">
-                <Image src="/images/logo/zadesoft.png" alt="Zadesoft" width={32} height={24} />
+              <div className="mb-2 w-fit p-1">
+                <Image src={zadeLogo} alt="Zadesoft" height={24} />
               </div>
               <h2 className="text-xl font-semibold">사내 게임 운영툴</h2>
               <div className="flex items-center gap-1">
@@ -40,13 +43,13 @@ export default function Page() {
 
           <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
             <div>
-              <div className="mb-3 h-6 w-full">
-                <Image src="/images/logo/zadesoft.png" alt="Zadesoft" width={32} height={24} />
+              <div className="mb-2 w-fit p-1">
+                <Image src={zadeLogo} alt="Zadesoft" height={24} />
               </div>
               <h2 className="text-xl font-semibold">NICE 본인인증 API 서버</h2>
               <div className="flex items-center gap-1">
                 <span className="text-sm font-bold text-[#287af3]">(주)제이드소프트</span>
-                <Image src="/images/projects/cert-mark.png" alt="인증 배지 아이콘" width={16} height={16} />
+                <Image src={certMark} alt="인증 배지 아이콘" width={16} height={16} />
               </div>
             </div>
 
@@ -68,13 +71,13 @@ export default function Page() {
 
           <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
             <div>
-              <div className="mb-3 h-6 w-full">
-                <Image src="/images/logo/stoic.jpg" alt="Zadesoft" width={72} height={24} />
+              <div className="mb-2 w-fit p-1">
+                <Image src={stoicLogo} alt="STOIC Entertainment" height={24} />
               </div>
               <h2 className="text-xl font-semibold">사내 게임 운영툴</h2>
               <div className="flex items-center gap-1">
                 <span className="text-sm font-bold text-[#287af3]">(주)스토익엔터테인먼트</span>
-                <Image src="/images/projects/cert-mark.png" alt="인증 배지 아이콘" width={16} height={16} />
+                <Image src={certMark} alt="인증 배지 아이콘" width={16} height={16} />
               </div>
             </div>
 
@@ -97,13 +100,13 @@ export default function Page() {
 
           <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
             <div>
-              <div className="mb-3 h-6 w-full">
-                <Image src="/images/logo/stoic.jpg" alt="Zadesoft" width={72} height={24} />
+              <div className="mb-2 w-fit p-1">
+                <Image src={stoicLogo} alt="STOIC Entertainment" height={24} />
               </div>
               <h2 className="text-xl font-semibold">자동화 웹 크롤러</h2>
               <div className="flex items-center gap-1">
                 <span className="text-sm font-bold text-[#287af3]">(주)스토익엔터테인먼트</span>
-                <Image src="/images/projects/cert-mark.png" alt="인증 배지 아이콘" width={16} height={16} />
+                <Image src={certMark} alt="인증 배지 아이콘" width={16} height={16} />
               </div>
             </div>
 
@@ -127,13 +130,13 @@ export default function Page() {
 
           <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
             <div>
-              <div className="mb-3 h-6 w-full">
-                <Image src="/images/logo/stoic.jpg" alt="Zadesoft" width={72} height={24} />
+              <div className="mb-2 w-fit p-1">
+                <Image src={stoicLogo} alt="STOIC Entertainment" height={24} />
               </div>
               <h2 className="text-xl font-semibold">유저 문의 페이지</h2>
               <div className="flex items-center gap-1">
                 <span className="text-sm font-bold text-[#287af3]">(주)스토익엔터테인먼트</span>
-                <Image src="/images/projects/cert-mark.png" alt="인증 배지 아이콘" width={16} height={16} />
+                <Image src={certMark} alt="인증 배지 아이콘" width={16} height={16} />
               </div>
             </div>
 
@@ -152,13 +155,13 @@ export default function Page() {
 
           <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
             <div>
-              <div className="mb-3 h-6 w-full">
-                <Image src="/images/logo/stoic.jpg" alt="Zadesoft" width={72} height={24} />
+              <div className="mb-2 w-fit p-1">
+                <Image src={stoicLogo} alt="STOIC Entertainment" height={24} />
               </div>
               <h2 className="text-xl font-semibold">PC WOL 관리 사이트</h2>
               <div className="flex items-center gap-1">
                 <span className="text-sm font-bold text-[#287af3]">(주)스토익엔터테인먼트</span>
-                <Image src="/images/projects/cert-mark.png" alt="인증 배지 아이콘" width={16} height={16} />
+                <Image src={certMark} alt="인증 배지 아이콘" width={16} height={16} />
               </div>
             </div>
 
@@ -181,7 +184,7 @@ export default function Page() {
 
           <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
             <div>
-              <div className="mb-3 h-6 w-full">
+              <div className="mb-2 w-fit p-1">
                 <FaCode size={24} />
               </div>
               <h2 className="text-xl font-semibold">개인 기술 블로그 (Cluvone)</h2>
