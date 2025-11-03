@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Container from './Container';
+import { Container } from '@/layout';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 

@@ -6,7 +6,7 @@ export default function Container({ children, ...props }: ContainerProps) {
   const { className, ...rest } = props;
 
   return (
-    <div className={clsx('mx-auto max-w-5xl', className)} {...rest}>
+    <div className={clsx(className, 'mx-auto max-w-5xl')} {...rest}>
       {children}
     </div>
   );

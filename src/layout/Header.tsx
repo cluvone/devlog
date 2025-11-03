@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Menu from './Menu';
+import { Menu, Container } from '@/layout';
 import { SlMagnifier, SlMenu } from 'react-icons/sl';
 
 const HEADER_TITLE = 'cluvone.me';
@@ -7,7 +7,7 @@ const HEADER_TITLE = 'cluvone.me';
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 h-16 w-full px-4 backdrop-blur-lg md:h-20 md:px-8">
-      <div className="mx-auto flex h-full max-w-5xl items-center justify-between">
+      <Container className="flex h-full items-center justify-between">
         <Link href="/" aria-label={HEADER_TITLE} className="min-w-0">
           <h1 className="truncate font-mono text-2xl font-medium">{HEADER_TITLE}</h1>
         </Link>
@@ -24,7 +24,7 @@ export default function Header() {
             </div>
           </div>
         </nav>
-      </div>
+      </Container>
     </header>
   );
 }
