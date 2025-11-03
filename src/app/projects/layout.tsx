@@ -1,5 +1,10 @@
 import { Container } from '@/layout';
 
-export default function ProjectsLayout({ children }: LayoutProps<'/projects'>) {
-  return <Container>{children}</Container>;
+export default function ProjectsLayout({ children, modal }: LayoutProps<'/projects'>) {
+  return (
+    <Container>
+      {children}
+      {modal}
+    </Container>
+  );
 }

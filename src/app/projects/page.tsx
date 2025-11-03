@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import zadeLogo from 'public/images/logo/zadesoft.png';
 import stoicLogo from 'public/images/logo/stoic.png';
@@ -8,34 +9,36 @@ export default function ProjectsPage() {
   return (
     <div>
       <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-        <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
-          <div>
-            <div className="mb-2 w-fit p-1">
-              <Image src={zadeLogo} alt="Zadesoft" height={24} />
+        <li>
+          <Link href="/projects/1" className="flex flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
+            <div>
+              <div className="mb-2 w-fit p-1">
+                <Image src={zadeLogo} alt="Zadesoft" height={24} />
+              </div>
+              <h2 className="text-xl font-semibold">사내 게임 운영툴</h2>
+              <div className="flex items-center gap-1">
+                <span className="text-sm font-bold text-[#287af3]">(주)제이드소프트</span>
+                <Image src="/images/projects/cert-mark.png" alt="인증 배지 아이콘" width={16} height={16} />
+              </div>
             </div>
-            <h2 className="text-xl font-semibold">사내 게임 운영툴</h2>
-            <div className="flex items-center gap-1">
-              <span className="text-sm font-bold text-[#287af3]">(주)제이드소프트</span>
-              <Image src="/images/projects/cert-mark.png" alt="인증 배지 아이콘" width={16} height={16} />
+
+            <div>
+              <p>- 프론트엔드 및 백엔드 풀스택 개발</p>
+              <p>- 서버 운영 및 라이브 이슈 대응</p>
+              <p>- 데이터베이스 설계 및 성능 최적화</p>
             </div>
-          </div>
 
-          <div>
-            <p>- 프론트엔드 및 백엔드 풀스택 개발</p>
-            <p>- 서버 운영 및 라이브 이슈 대응</p>
-            <p>- 데이터베이스 설계 및 성능 최적화</p>
-          </div>
+            <ul className="flex flex-wrap items-center gap-1 text-xs">
+              <li className="bg-primary/10 text-primary rounded-md px-2 py-1">C#</li>
+              <li className="bg-primary/10 text-primary rounded-md px-2 py-1">ASP.NET Core</li>
+              <li className="bg-primary/10 text-primary rounded-md px-2 py-1">TypeScript</li>
+              <li className="bg-primary/10 text-primary rounded-md px-2 py-1">React</li>
+              <li className="bg-primary/10 text-primary rounded-md px-2 py-1">MySQL</li>
+              <li className="bg-primary/10 text-primary rounded-md px-2 py-1">AWS</li>
+            </ul>
 
-          <ul className="flex flex-wrap items-center gap-1 text-xs">
-            <li className="bg-primary/10 text-primary rounded-md px-2 py-1">C#</li>
-            <li className="bg-primary/10 text-primary rounded-md px-2 py-1">ASP.NET Core</li>
-            <li className="bg-primary/10 text-primary rounded-md px-2 py-1">TypeScript</li>
-            <li className="bg-primary/10 text-primary rounded-md px-2 py-1">React</li>
-            <li className="bg-primary/10 text-primary rounded-md px-2 py-1">MySQL</li>
-            <li className="bg-primary/10 text-primary rounded-md px-2 py-1">AWS</li>
-          </ul>
-
-          <div className="text-foreground/50 text-xs">프로젝트 세부 사항을 확인해 보세요. →</div>
+            <div className="text-foreground/50 text-xs">프로젝트 세부 사항을 확인해 보세요. →</div>
+          </Link>
         </li>
 
         <li className="flex cursor-pointer flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">

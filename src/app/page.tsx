@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Container } from '@/layout';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <Container className="flex flex-col gap-y-16">
       <div className="flex flex-col gap-y-8">
