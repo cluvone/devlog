@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { Cascadia_Mono } from 'next/font/google';
-import { Footer, Header, Main } from '@/layout';
+import { Footer, Header, Main } from '@/components/layout';
 import '@/styles/globals.css';
 
 const pretendard = localFont({

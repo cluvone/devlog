@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Container } from '@/layout';
+import { Container } from '@/components';
 
 export default function HomePage() {
   return (
