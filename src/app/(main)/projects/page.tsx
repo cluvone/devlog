@@ -7,8 +7,8 @@ import { FaCode } from 'react-icons/fa6';
 
 export default function ProjectsPage() {
   return (
-    <div>
-      <ul className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+    <article>
+      <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         <li>
           <Link href="/projects/1" className="flex flex-col gap-y-4 rounded-4xl border border-gray-200 p-8 transition-opacity hover:opacity-50">
             <div>
@@ -209,6 +209,6 @@ export default function ProjectsPage() {
           <div className="text-foreground/50 text-xs">프로젝트 세부 사항을 확인해 보세요. →</div>
         </li>
       </ul>
-    </div>
+    </article>
   );
 }

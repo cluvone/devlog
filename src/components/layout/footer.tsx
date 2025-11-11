@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import { Container } from '../ui';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { SiGmail } from 'react-icons/si';
 
 export default function Footer() {
   return (
     <footer className="border-t border-t-gray-200 bg-slate-50 py-12 text-slate-400">
-      <Container className="mx-auto flex w-full flex-col items-center gap-y-1">
+      <div className="flex w-full flex-col items-center gap-y-1">
         <div className="text-lg font-semibold">개발 꿈나무 최정원 블로그</div>
         <div className="text-sm">© 2025. cluvone All rights reserved.</div>
         <div className="mt-2 flex flex-wrap gap-x-6 gap-y-2">
@@ -20,7 +19,7 @@ export default function Footer() {
             <FaLinkedin size={24} />
           </Link>
         </div>
-      </Container>
+      </div>
     </footer>
   );
 }

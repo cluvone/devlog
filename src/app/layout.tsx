@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { Cascadia_Mono } from 'next/font/google';
-import { Footer, Header, Main } from '@/components/layout';
 import '@/styles/globals.css';
 
 const pretendard = localFont({
-  src: './fonts/PretendardVariable.woff2',
+  src: '../../public/fonts/PretendardVariable.woff2',
   variable: '--font-pretendard',
   display: 'swap',
 });
@@ -24,11 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="ko" className={`${pretendard.variable} ${cascadiaMono.variable} antialiased`}>
-      <body className="min-h-screen">
-        <Header />
-        <Main>{children}</Main>
-        <Footer />
-      </body>
+      <body className="min-h-screen">{children}</body>
     </html>
   );
 }

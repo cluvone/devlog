@@ -3,8 +3,8 @@ import { Container } from '@/components';
 
 export default function HomePage() {
   return (
-    <Container className="flex flex-col gap-y-16">
-      <div className="flex flex-col gap-y-8">
+    <Container>
+      <article className="flex flex-col gap-y-8">
         <section>
           <div>
             <span className="text-primary text-sm">@cluvone</span>
@@ -24,9 +24,9 @@ export default function HomePage() {
             최근에는 배포 자동화와 클라우드 인프라에도 관심을 넓혀가고 있습니다.
           </p>
         </section>
-      </div>
+      </article>
 
-      <div className="flex flex-col gap-y-20">
+      <article className="flex flex-col gap-y-20">
         <section>
           <h3 className="text-primary mb-5 text-2xl font-semibold">👩‍💻 경력</h3>
 
@@ -157,7 +157,7 @@ export default function HomePage() {
             <li className="border-primary text-primary rounded-2xl border px-4 py-1">MySQL</li>
           </ul>
         </section>
-      </div>
+      </article>
     </Container>
   );
 }

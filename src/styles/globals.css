@@ -10,7 +10,7 @@
   --foreground-tertiary: var(--color-neutral-600); /* #525252 */
   --foreground-quaternary: var(--color-neutral-500); /* #737373 */
   --foreground-quinary: var(--color-neutral-400); /* #a1a1a1 */
-  --primary: var(--color-rose-400); /* #ff637e */
+  --primary: var(--color-rose-500); /* #ff637e */
   --primary-foreground: var(--color-white);
   --secondary: var(--color-rose-100);
   --secondary-foreground: var(--color-rose-400);
