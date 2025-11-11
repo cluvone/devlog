@@ -2,6 +2,7 @@ export type * from './avatar';
 export { default as Avatar } from './avatar';
 export * from './breadcrumb';
 export * from './button';
+export * from './card';
 export type * from './command';
 export { default as Command } from './command';
 export type * from './container';
