@@ -36,7 +36,7 @@ export function Root({ className, children, ...props }: ComponentProps<'div'>) {
           <div
             data-slot="sidebar-container"
             className={cn(
-              'border-r-border-secondary fixed inset-y-0 left-0 z-10 flex h-svh w-(--sidebar-width) border-r transition-transform',
+              'border-r-sidebar-border fixed inset-y-0 left-0 z-10 flex h-svh w-(--sidebar-width) border-r transition-transform',
               'group-data-[state=collapsed]:-translate-x-full',
               SIDEBAR_ANIMATION,
               className,
@@ -135,7 +135,11 @@ export function MenuItem({ className, ...props }: ComponentProps<'li'>) {
     <li
       data-slot="sidebar-menu-item"
       data-sidebar="menu-item"
-      className={cn('group/menu-item [&:has(>[data-sidebar=menu-collapse]:hover)>[data-sidebar=menu-button]]:bg-sidebar-accent relative', className)}
+      className={cn(
+        'group/menu-item relative',
+        '[&:has(>[data-sidebar=menu-collapse]:hover)>[data-sidebar=menu-button]]:bg-sidebar-accent [&:has(>[data-sidebar=menu-collapse]:hover)>[data-sidebar=menu-button]]:text-sidebar-accent-foreground',
+        className,
+      )}
       {...props}
     />
   );
@@ -178,7 +182,7 @@ export function MenuCollapse({ className, asChild = false, ...props }: React.Com
       data-sidebar="menu-collapse"
       className={cn(
         'ring-sidebar-ring absolute top-1.25 left-2 flex size-5 items-center justify-center rounded-md opacity-0 outline-hidden transition-[opacity,background-color]',
-        'hover:bg-fill group-hover/menu-item:opacity-100 peer-hover/menu-button:opacity-100 focus-visible:ring-2 [&>svg]:transition-transform group-data-[state=open]/menu-item:[&>svg]:rotate-90',
+        'hover:bg-sidebar-collapse group-hover/menu-item:opacity-100 peer-hover/menu-button:opacity-100 focus-visible:ring-2 [&>svg]:transition-transform group-data-[state=open]/menu-item:[&>svg]:rotate-90',
         'after:absolute after:-inset-1.25', // 사용자 편의성을 위해 버튼의 실제 클릭 영역을 늘린다.
         className,
       )}
@@ -278,5 +282,5 @@ export function Icon({ collapsible = false, className, children, ...props }: Com
 }
 
 export function Title({ className, ...props }: ComponentProps<'span'>) {
-  return <span data-slot="sidebar-menu-title" data-sidebar="menu-title" className={cn('truncate leading-none', className)} {...props} />;
+  return <span data-slot="sidebar-menu-title" data-sidebar="menu-title" className={cn('truncate', className)} {...props} />;
 }

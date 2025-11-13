@@ -10,16 +10,14 @@
   --foreground-tertiary: var(--color-neutral-600); /* #525252 */
   --foreground-quaternary: var(--color-neutral-500); /* #737373 */
   --foreground-quinary: var(--color-neutral-400); /* #a1a1a1 */
-  --primary: var(--color-rose-500); /* #ff637e */
+  --primary: var(--color-rose-400); /* #ff637e */
   --primary-foreground: var(--color-white); /* #ffffff */
   --secondary: var(--color-rose-100);
   --secondary-foreground: var(--color-rose-400);
 
-  --icon: var(--color-neutral-500);
+  --icon: var(--color-neutral-500); /* #737373 */
   --border: var(--color-neutral-300); /* #d4d4d4 */
   --border-secondary: var(--color-neutral-200); /* #e5e5e5 */
-  --fill: color-mix(in oklab, var(--color-neutral-300) 80%, transparent);
-  --fill-foreground: var(--color-neutral-800);
   --accent: color-mix(in oklab, var(--color-neutral-200) 80%, transparent);
   --accent-foreground: var(--color-neutral-800);
   --muted: var(--color-neutral-100);
@@ -28,58 +26,51 @@
 
   --input: var(--color-neutral-100);
   --ring: var(--color-neutral-200);
-  --card: var(--color-white);
+  --card: var(--color-neutral-100);
   --card-foreground: var(--color-neutral-800);
   --popover: var(--color-white);
   --popover-foreground: var(--color-neutral-800);
 
   --sidebar: var(--color-neutral-100);
   --sidebar-foreground: var(--color-neutral-600);
-  --sidebar-primary: var(--color-neutral-600);
-  --sidebar-primary-foreground: var(--color-white);
   --sidebar-accent: color-mix(in oklab, var(--color-neutral-200) 80%, transparent);
   --sidebar-accent-foreground: var(--color-neutral-800);
+  --sidebar-collapse: color-mix(in oklab, var(--color-neutral-300) 80%, transparent);
   --sidebar-border: var(--color-neutral-200);
   --sidebar-ring: var(--color-neutral-200);
 }
 
 .dark {
   --background: var(--color-neutral-900);
-  --foreground: #e5e5e5;
-  --foreground-secondary: #e5e5e5;
-  --foreground-tertiary: #e5e5e5;
-  --foreground-quaternary: #e5e5e5;
-  --foreground-quinary: var(--color-neutral-400);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
+  --foreground: var(--color-neutral-100);
+  --foreground-secondary: var(--color-neutral-200);
+  --foreground-tertiary: var(--color-neutral-300);
+  --foreground-quaternary: var(--color-neutral-400);
+  --foreground-quinary: var(--color-neutral-500);
 
-  --icon: var(--color-neutral-500);
-  --border: oklch(1 0 0 / 10%);
-  --border-secondary: oklch(0.922 0 0);
-  --fill: color-mix(in oklab, var(--color-neutral-300) 80%, transparent);
-  --fill-foreground: var(--color-neutral-800);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
+  --icon: var(--color-neutral-400);
+  --border: var(--color-neutral-700);
+  --border-secondary: var(--color-neutral-800);
+  --accent: color-mix(in oklab, var(--color-neutral-700) 60%, transparent);
+  --accent-foreground: var(--color-neutral-50);
+  --muted: var(--color-neutral-800);
+  --muted-foreground: var(--color-neutral-100);
+  --destructive: var(--color-red-400);
 
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
+  --input: var(--color-neutral-800);
+  --ring: var(--color-neutral-500);
+  --card: var(--color-neutral-800);
+  --card-foreground: var(--color-neutral-100);
+  --popover: var(--color-neutral-900);
+  --popover-foreground: var(--color-neutral-100);
 
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: var(--color-primary);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar: color-mix(in oklab, var(--color-neutral-800) 60%, transparent);
+  --sidebar-foreground: color-mix(in oklab, var(--color-neutral-400) 90%, transparent);
+  --sidebar-accent: color-mix(in oklab, var(--color-neutral-700) 70%, transparent);
+  --sidebar-accent-foreground: var(--color-neutral-50);
+  --sidebar-collapse: var(--color-neutral-700);
+  --sidebar-border: color-mix(in oklab, var(--color-neutral-700) 50%, transparent);
+  --sidebar-ring: var(--color-neutral-600);
 }
 
 /* Tailwind CSS 테마 변수 */
@@ -101,8 +92,6 @@
   --color-icon: var(--icon);
   --color-border: var(--border);
   --color-border-secondary: var(--border-secondary);
-  --color-fill: var(--fill);
-  --color-fill-foreground: var(--fill-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --color-muted: var(--muted);
@@ -118,10 +107,9 @@
 
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
   --color-sidebar-accent: var(--sidebar-accent);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-collapse: var(--sidebar-collapse);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
@@ -129,9 +117,6 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground max-h-screen min-h-svh;
   }
   button:not(:disabled),
   [role='button']:not(:disabled) {

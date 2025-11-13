@@ -1,6 +1,6 @@
-import { Breadcrumb, Button, SearchDialog } from '../ui';
-import { EclipseIcon, Share2Icon } from 'lucide-react';
-import { Trigger } from './sidebar/base';
+import ThemeButton from './ThemeButton';
+import { Breadcrumb, Button, SearchDialog, SidebarTrigger } from '@/components';
+import { Share2Icon } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -9,13 +9,13 @@ export default function Header() {
         <h1 className="sr-only">최정원 블로그</h1>
 
         <div className="flex min-w-0 items-center gap-0.5">
-          <Trigger />
+          <SidebarTrigger />
           <Breadcrumb />
         </div>
 
         <div className="flex items-center gap-2">
           <SearchDialog breakpoint={768} />
-          <Button variant="ghost" size="icon" title="테마" aria-label="다크모드 토글" icon={<EclipseIcon className="text-icon size-5" />} />
+          <ThemeButton />
           <Button variant="ghost" size="icon" title="공유" aria-label="현재 페이지 공유" icon={<Share2Icon className="text-icon size-5" />} />
         </div>
       </div>

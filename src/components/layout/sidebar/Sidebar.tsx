@@ -102,7 +102,7 @@ export default function Sidebar() {
           // 블로그 메인 카테고리 목록
           <SidebarPrimitive.Group key={item.group}>
             <SidebarPrimitive.GroupLabel>
-              <SidebarPrimitive.Title>{item.group}</SidebarPrimitive.Title>
+              <SidebarPrimitive.Title className="leading-none">{item.group}</SidebarPrimitive.Title>
             </SidebarPrimitive.GroupLabel>
 
             <SidebarPrimitive.GroupContent>

@@ -73,7 +73,7 @@ const SearchTrigger = memo<SearchTriggerProps>(function SearchTrigger({ breakpoi
       variant="outline"
       title="검색"
       aria-label="검색창 열기"
-      className="bg-input text-foreground-tertiary h-7 w-56 rounded-lg"
+      className="bg-input border-border-secondary text-foreground-tertiary h-7 w-56 rounded-lg"
       icon={<SearchIcon />}
       onClick={onClick}
     >

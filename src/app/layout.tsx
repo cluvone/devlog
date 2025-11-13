@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import { Cascadia_Mono } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
+import { cn } from '@/lib';
 import '@/styles/globals.css';
 
 const pretendard = localFont({
@@ -22,8 +24,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
-    <html lang="ko" className={`${pretendard.variable} ${cascadiaMono.variable} antialiased`}>
-      <body>{children}</body>
+    <html lang="ko" className={cn('antialiased', pretendard.variable, cascadiaMono.variable)} suppressHydrationWarning>
+      <body className="bg-background text-foreground max-h-screen min-h-svh">
+        <ThemeProvider attribute="class" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

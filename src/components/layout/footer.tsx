@@ -4,7 +4,7 @@ import { SiGmail } from 'react-icons/si';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-t-gray-200 bg-slate-50 py-12 text-slate-400">
+    <footer className="bg-background border-t-border border-t py-12">
       <div className="flex w-full flex-col items-center gap-y-1">
         <div className="text-lg font-semibold">개발 꿈나무 최정원 블로그</div>
         <div className="text-sm">© 2025. cluvone All rights reserved.</div>

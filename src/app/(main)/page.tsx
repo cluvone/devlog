@@ -35,8 +35,8 @@ export default function HomePage() {
       <div className="flex flex-col gap-y-16">
         <section className="flex flex-col items-center gap-8 lg:flex-row">
           <div className="flex flex-col gap-4">
-            <div className="bg-primary flex size-[248px] items-center justify-center rounded-full">
-              <Avatar src={avatar} alt="아바타 이미지" size={240} className="border-4 border-transparent" />
+            <div className="border-primary flex size-[248px] items-center justify-center rounded-full border">
+              <Avatar src={avatar} alt="아바타 이미지" size={240} className="border-background border-2" />
             </div>
 
             <div>
@@ -59,7 +59,7 @@ export default function HomePage() {
             </p>
 
             <div className="flex flex-col gap-y-4">
-              <Card variant="filled">
+              <Card variant="filled" className="border-none">
                 <div className="flex items-center gap-1">
                   <span>📍</span>
                   <Link href="/projects" className="text-foreground-quaternary text-sm underline transition-opacity hover:opacity-50">
@@ -68,7 +68,7 @@ export default function HomePage() {
                 </div>
               </Card>
 
-              <Card variant="filled">
+              <Card variant="filled" className="border-none">
                 <div className="flex items-center gap-1">
                   <span>📍</span>
                   <Link href="/blog" className="text-foreground-quaternary text-sm underline transition-opacity hover:opacity-50">
@@ -86,7 +86,7 @@ export default function HomePage() {
           <ul className="flex flex-col flex-wrap items-center gap-4 p-0 md:flex-row md:items-start md:gap-8">
             {core.map(({ title, description }, index) => (
               <li key={index} className="flex w-full flex-1 flex-col gap-4">
-                <div className="bg-fill h-60 w-full rounded-xl"></div>
+                <div className="bg-card h-60 w-full rounded-xl"></div>
                 <div className="flex flex-col gap-2">
                   <h4 className="text-lg font-semibold md:text-xl">{title}</h4>
                   <p className="text-foreground/60 text-sm leading-normal font-normal">{description}</p>
