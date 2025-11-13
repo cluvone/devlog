@@ -4,8 +4,8 @@ import { Trigger } from './sidebar/base';
 
 export default function Header() {
   return (
-    <header className="bg-background sticky top-0 left-0 z-10 h-12 w-full">
-      <div className="flex h-full w-full items-center justify-between px-3">
+    <header className="bg-background sticky top-0 left-0 z-10 w-full">
+      <div className="flex h-12 w-full items-center justify-between px-3">
         <h1 className="sr-only">최정원 블로그</h1>
 
         <div className="flex min-w-0 items-center gap-0.5">

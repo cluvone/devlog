@@ -1,5 +1,5 @@
-export type * from './avatar';
-export { default as Avatar } from './avatar';
+export type * from './avatar/avatar';
+export { default as Avatar } from './avatar/avatar';
 export * from './breadcrumb';
 export * from './button';
 export * from './card';

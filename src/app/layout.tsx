@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang="ko" className={`${pretendard.variable} ${cascadiaMono.variable} antialiased`}>
-      <body className="min-h-screen">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

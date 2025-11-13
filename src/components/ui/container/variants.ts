@@ -1,11 +1,11 @@
 import type { ContainerConfig } from './types';
 import { cva } from 'class-variance-authority';
 
-const containerVariants = cva<ContainerConfig>('mx-auto px-6 py-9', {
+const containerVariants = cva<ContainerConfig>('mx-auto px-6 py-8 lg:py-20', {
   variants: {
     size: {
-      small: 'max-w-3xl md:py-20',
-      large: 'max-w-5xl md:px-0',
+      small: 'max-w-3xl',
+      large: 'max-w-6xl lg:px-16',
     },
   },
   defaultVariants: {

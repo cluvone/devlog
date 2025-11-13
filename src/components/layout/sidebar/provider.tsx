@@ -94,7 +94,7 @@ export function SidebarProvider({
       <div
         data-slot="sidebar-wrapper"
         style={{ ...{ '--sidebar-width': SIDEBAR_WIDTH }, ...style }}
-        className={cn('group/sidebar-wrapper flex min-h-svh w-full', className)}
+        className={cn('group/sidebar-wrapper flex max-h-screen min-h-svh w-full', className)}
         {...props}
       >
         {children}

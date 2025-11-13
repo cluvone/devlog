@@ -4,7 +4,7 @@ import type { BreadcrumbItem, BreadcrumbProps } from './types';
 import * as BreadcrumbPrimitive from './base';
 import Link from 'next/link';
 import profile from 'public/images/profile.jpg';
-import Avatar from '../avatar';
+import Avatar from '../avatar/avatar';
 import DropdownMenu from '../dropdown-menu';
 import { Fragment } from 'react';
 import { useSelectedLayoutSegments } from 'next/navigation';
